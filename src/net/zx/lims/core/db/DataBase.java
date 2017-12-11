@@ -1,4 +1,4 @@
-package net.zx.core.db;
+package net.zx.lims.core.db;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import javax.sql.RowSet;
 
-import net.zx.core.util.Validate;
+import net.zx.lims.core.util.Validate;
 
 public class DataBase {
 	String type=null;

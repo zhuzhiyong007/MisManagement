@@ -1,4 +1,4 @@
-package net.zx.tag;
+package net.zx.lims.tag;
 
 public class TableTag {
 

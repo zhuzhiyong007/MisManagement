@@ -1,6 +1,6 @@
-package net.zx.core.util;
+package net.zx.lims.core.util;
 
-import net.zx.core.db.DataBase;
+import net.zx.lims.core.db.DataBase;
 
 /**
  * @author Administrator

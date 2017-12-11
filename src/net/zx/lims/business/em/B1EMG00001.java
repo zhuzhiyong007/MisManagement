@@ -1,12 +1,12 @@
-package net.zx.business.em;
+package net.zx.lims.business.em;
 
 import java.sql.ResultSet;
 
 import javax.sql.RowSet;
 
 import oracle.jdbc.driver.DBConversion;
-import net.zx.core.db.DataBase;
-import net.zx.core.util.Tools;
+import net.zx.lims.core.db.DataBase;
+import net.zx.lims.core.util.Tools;
 
 public class B1EMG00001 {
 	

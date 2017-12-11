@@ -1,4 +1,4 @@
-package net.zx.core.util;
+package net.zx.lims.core.util;
 
 public class Validate {
 	

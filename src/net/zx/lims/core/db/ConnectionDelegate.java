@@ -1,4 +1,4 @@
-package net.zx.core.db;
+package net.zx.lims.core.db;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -11,7 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class ConnectionDelegate {
-	public static String MYBATISCONTENT="mybatis-config.xml";
+	public static String MYBATISCONTENT="/net/zx/core/db/mybatis-config.xml";
 	public static HashMap<String,SqlSessionFactory> sessionFactoryMap=new HashMap<String,SqlSessionFactory>();
 	
 	public ConnectionDelegate(){
@@ -32,8 +32,7 @@ public class ConnectionDelegate {
 
 	
 	public SqlSessionFactory getSessionFactory(){
-		System.out.println("88888888888888"+request.getSession().getServletContext().getRealPath( 
-			    "/"));
+		//System.out.println("88888888888888"+request.getSession().getServletContext().getRealPath("/"));
 		Reader reader = null;
 		try {
 			reader = Resources.getResourceAsReader(MYBATISCONTENT);
