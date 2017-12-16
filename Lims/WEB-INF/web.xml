@@ -11,14 +11,14 @@
   </welcome-file-list>
   
   <!--  listener > filter > servlet   -->
-  <!-- 
+
 	 <jsp-config>
 		<taglib>
-		   <taglib-uri>Taglib</taglib-uri>
-		   <taglib-location>/WEB-INF/ZxTaglib.tld</taglib-location>
+		   <taglib-uri>ZXTag</taglib-uri>
+		   <taglib-location>/WEB-INF/ZXTag.tld</taglib-location>
 		</taglib>
 	</jsp-config>
-   -->
+
 	<error-page>
 	    <error-code>404</error-code>
 	    <location>/error404.jsp</location>

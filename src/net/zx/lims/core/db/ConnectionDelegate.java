@@ -5,6 +5,8 @@ import java.io.Reader;
 import java.sql.Connection;
 import java.util.HashMap;
 
+import net.zx.lims.core.util.Log;
+
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -20,6 +22,7 @@ public class ConnectionDelegate {
 	 
 	
 	public Connection getConnection(String extDataSource){
+		Log.log("11111111111111");
 		synchronized(DataBase.class){
 			if(sessionFactoryMap.get(extDataSource)==null){
 				sessionFactoryMap.put(extDataSource,getSessionFactory());
